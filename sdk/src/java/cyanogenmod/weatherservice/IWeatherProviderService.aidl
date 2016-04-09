@@ -14,18 +14,16 @@
  * limitations under the License.
  */
 
-package cyanogenmod.weather;
+package cyanogenmod.weatherservice;
 
-import cyanogenmod.weather.IWeatherServiceProviderChangeListener;
+import cyanogenmod.weatherservice.IWeatherProviderServiceClient;
 import cyanogenmod.weather.RequestInfo;
 
 /** @hide */
-interface ICMWeatherManager {
-    oneway void updateWeather(in RequestInfo info);
-    oneway void lookupCity(in RequestInfo info);
-    oneway void registerWeatherServiceProviderChangeListener(
-        in IWeatherServiceProviderChangeListener listener);
-    oneway void unregisterWeatherServiceProviderChangeListener(
-        in IWeatherServiceProviderChangeListener listener);
-    String getActiveWeatherServiceProviderLabel();
+oneway interface IWeatherProviderService {
+    void processWeatherUpdateRequest(in RequestInfo request);
+    void processCityNameLookupRequest(in RequestInfo request);
+    void setServiceClient(in IWeatherProviderServiceClient client);
+    void cancelOngoingRequests();
+    void cancelRequest(in RequestInfo request);
 }
