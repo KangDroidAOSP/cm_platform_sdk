@@ -1865,7 +1865,7 @@ public final class CMSettings {
          * me bro
          */
         public static final Validator __MAGICAL_TEST_PASSING_ENABLER_VALIDATOR =
-                sBooleanValidator;
+                sAlwaysTrueValidator;
 
         /**
          * @hide
@@ -2830,6 +2830,12 @@ public final class CMSettings {
          */
         public static final String LOCK_SCREEN_BLUR_ENABLED = "lock_screen_blur_enabled";
 
+        /**
+         * Whether to display weather information on the lock screen
+         * @hide
+         */
+        public static final String LOCK_SCREEN_WEATHER_ENABLED = "lock_screen_weather_enabled";
+
 
         // endregion
 
@@ -3379,6 +3385,13 @@ public final class CMSettings {
          */
         public static final String DEV_FORCE_SHOW_NAVBAR = "dev_force_show_navbar";
         // endregion
+
+        /**
+         * I can haz more bukkits
+         * @hide
+         */
+        public static final String __MAGICAL_TEST_PASSING_ENABLER =
+                "___magical_test_passing_enabler";
 
         /**
          * @hide
