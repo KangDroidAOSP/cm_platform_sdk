@@ -54,6 +54,12 @@ public class QSConstants {
     public static final String TILE_CAFFEINE = "caffeine";
     public static final String TILE_EDIT = "edit";
     public static final String TILE_DND = "dnd";
+	public static final String TILE_MUSIC = "music";
+	public static final String TILE_IMMERSIVE = "expanded_desktop";
+	public static final String TILE_FLOATING = "float_mode";
+	public static final String TILE_BRIGHTNESS = "brightness";
+	public static final String TILE_SCREEN_OFF = "screen_off";
+	public static final String TILE_SCREENSHOT = "screenshot";
 
     public static final String DYNAMIC_TILE_NEXT_ALARM = "next_alarm";
     public static final String DYNAMIC_TILE_IME_SELECTOR = "ime_selector";
@@ -100,6 +106,12 @@ public class QSConstants {
         STATIC_TILES_AVAILABLE.add(TILE_SYNC);
         STATIC_TILES_AVAILABLE.add(TILE_BATTERY_SAVER);
         STATIC_TILES_AVAILABLE.add(TILE_CAFFEINE);
+		STATIC_TILES_AVAILABLE.add(TILE_MUSIC);
+		STATIC_TILES_AVAILABLE.add(TILE_IMMERSIVE);
+		STATIC_TILES_AVAILABLE.add(TILE_FLOATING);
+		STATIC_TILES_AVAILABLE.add(TILE_BRIGHTNESS);
+		STATIC_TILES_AVAILABLE.add(TILE_SCREEN_OFF);
+		STATIC_TILES_AVAILABLE.add(TILE_SCREENSHOT);
 
         TILES_AVAILABLE.addAll(STATIC_TILES_AVAILABLE);
 
